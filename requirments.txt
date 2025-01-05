@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in {{ weather.city }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather in {{ weather.city }}</h1>
+        <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather Icon">
+        <p><strong>Temperature:</strong> {{ weather.temperature }} &deg;C</p>
+        <p><strong>Condition:</strong> {{ weather.description }}</p>
+        <a href="/">Search another city</a>
+    </div>
+</body>
+</html>
